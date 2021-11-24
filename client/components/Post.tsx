@@ -1,11 +1,17 @@
-export default function Post() {
+import { Post as PostInterface } from "../interfaces/post";
+
+interface PostProps {
+  post: PostInterface;
+}
+
+export default function Post({ post }: PostProps) {
   return (
     <div className="w-1/3 p-px md:px-3">
       <a href="#">
         <article className="post bg-gray-100 text-white relative pb-full md:mb-6">
           <img
             className="w-full h-full absolute left-0 top-0 object-cover"
-            src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+            src={post.imageUrl}
             alt="image"
           />
 
@@ -21,12 +27,12 @@ export default function Post() {
             >
               <span className="p-2">
                 <i className="fas fa-heart"></i>
-                412K
+                {post.likes}
               </span>
 
               <span className="p-2">
                 <i className="fas fa-comment"></i>
-                2,909
+                {post.comments}
               </span>
             </div>
           </div>

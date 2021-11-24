@@ -1,10 +1,16 @@
+import { Post as PostInterface } from "../interfaces/post";
 import Post from "./Post";
 
-export default function Posts() {
+interface PostsProps {
+  posts: PostInterface[];
+}
+
+export default function Posts({ posts }: PostsProps) {
+  console.log(posts);
   return (
     <div className="flex flex-wrap -mx-px md:-mx-3">
-      {[1, 2, 3, 4, 5].map((i) => (
-        <Post key={i} />
+      {posts.map((post) => (
+        <Post key={post.id} post={post} />
       ))}
     </div>
   );

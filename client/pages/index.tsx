@@ -1,13 +1,23 @@
+import { useEffect, useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Posts from "../components/Posts";
 import Tabs from "../components/Tabs";
+import { Post } from "../interfaces/post";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
+  const [posts, setPosts] = useState<Post[]>([]);
+
+  useEffect(() => {
+    fetch("/api/posts")
+      .then((response) => response.json())
+      .then((response) => setPosts(response))
+      .catch(console.log);
+  }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -40,7 +50,7 @@ const Home: NextPage = () => {
               </li>
             </ul> */}
             <Tabs />
-            <Posts />
+            <Posts posts={posts} />
           </div>
         </div>
       </main>
