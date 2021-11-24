@@ -1,3 +1,5 @@
+import { BadgeCheckIcon } from "@heroicons/react/outline";
+
 export default function Header() {
   return (
     <header className="flex flex-wrap items-center p-4 md:py-8">
@@ -18,13 +20,15 @@ export default function Header() {
 
           <span
             className="inline-block fas fa-certificate fa-lg text-blue-500 
-                             relative mr-6 text-xl transform -translate-y-2"
+                             relative mr-10 text-xl transform -translate-y-2"
             aria-hidden="true"
           >
-            <i
-              className="fas fa-check text-white text-xs absolute inset-x-0
+            <BadgeCheckIcon
+              className="text-white text-xs absolute inset-x-0
                              ml-1 mt-px"
-            ></i>
+              width="27"
+              fill="#3b83f6"
+            />
           </span>
 
           <a

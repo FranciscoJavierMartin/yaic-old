@@ -1,3 +1,5 @@
+import { ViewGridIcon } from "@heroicons/react/outline";
+
 export default function Tabs() {
   return (
     <ul
@@ -7,7 +9,8 @@ border-t"
     >
       <li className="md:border-t md:border-gray-700 md:-mt-px md:text-gray-700">
         <a className="inline-block p-3" href="#">
-          <i className="fas fa-th-large text-xl md:text-xs"></i>
+          {/* <i className="fas fa-th-large text-xl md:text-xs"></i> */}
+          <ViewGridIcon className="text-xl md:text-xs" width="18" />
           <span className="hidden md:inline">post</span>
         </a>
       </li>

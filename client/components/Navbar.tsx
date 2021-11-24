@@ -1,3 +1,5 @@
+import { SearchIcon } from "@heroicons/react/outline";
+
 export default function Navbar() {
   return (
     <nav className="border-b px-4 py-2 bg-white">
@@ -15,7 +17,7 @@ export default function Navbar() {
             type="search"
             placeholder="Search"
           />
-          <i className="fa fa-search absolute top-0 left-0 ml-12 mt-1"></i>
+          <SearchIcon className="absolute top-0 left-0 ml-12 mt-1" width="18" />
         </div>
 
         <div className="space-x-4">
