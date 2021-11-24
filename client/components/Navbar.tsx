@@ -1,6 +1,4 @@
-import type { NextPage } from "next";
-
-const Navbar: NextPage = () => {
+export default function Navbar() {
   return (
     <nav className="border-b px-4 py-2 bg-white">
       <div className="flex flex-wrap items-center justify-between md:justify-around">
@@ -38,6 +36,4 @@ const Navbar: NextPage = () => {
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
