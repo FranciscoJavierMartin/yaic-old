@@ -6,7 +6,6 @@ interface PostsProps {
 }
 
 export default function Posts({ posts }: PostsProps) {
-  console.log(posts);
   return (
     <div className="flex flex-wrap -mx-px md:-mx-3">
       {posts.map((post) => (

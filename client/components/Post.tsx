@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { DuplicateIcon, HeartIcon, ChatIcon } from "@heroicons/react/outline";
 import { Post as PostInterface } from "../interfaces/post";
 
 interface PostProps {
@@ -19,7 +20,7 @@ export default function Post({ post }: PostProps) {
             width="500"
           />
 
-          <i className="fas fa-square absolute right-0 top-0 m-1"></i>
+          <DuplicateIcon className="absolute right-0 top-0 m-1 h-1 w-1" />
 
           <div
             className="overlay bg-gray-800 bg-opacity-25 w-full h-full absolute 
@@ -30,12 +31,12 @@ export default function Post({ post }: PostProps) {
                               space-x-4 h-full"
             >
               <span className="p-2">
-                <i className="fas fa-heart"></i>
+                <HeartIcon />
                 {post.likes}
               </span>
 
               <span className="p-2">
-                <i className="fas fa-comment"></i>
+                <ChatIcon />
                 {post.comments}
               </span>
             </div>
