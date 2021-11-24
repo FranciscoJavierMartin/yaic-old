@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Post as PostInterface } from "../interfaces/post";
 
 interface PostProps {
@@ -9,10 +10,13 @@ export default function Post({ post }: PostProps) {
     <div className="w-1/3 p-px md:px-3">
       <a href="#">
         <article className="post bg-gray-100 text-white relative pb-full md:mb-6">
-          <img
+          <Image
             className="w-full h-full absolute left-0 top-0 object-cover"
             src={post.imageUrl}
             alt="image"
+            layout="fill"
+            height="500"
+            width="500"
           />
 
           <i className="fas fa-square absolute right-0 top-0 m-1"></i>
