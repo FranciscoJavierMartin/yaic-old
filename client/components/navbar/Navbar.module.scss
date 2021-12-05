@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    display: none;
+    color: gray;
+    background-color: lightgray;
+    text-align: center;
+    padding: 5px;
+    max-width: 20rem;
+    outline: 0;
+    border-radius: 5px;
+    outline-offset: -2px;
+    border-width: 1px;
+    border-color: lightgray;
+    box-sizing: border-box;
+
+    @media (min-width: $sm-screen) {
+      display: block;
+    }
+  }
+
+  .links {
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: bold;
+
+    & > * {
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    & > a:first-of-type {
+      background-color: #4299e1;
+      color: white;
+    }
+
+    & > a:last-of-type {
+      background-color: white;
+      color: #4299e1;
+    }
+  }
+}
