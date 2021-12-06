@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '../components/navbar/Navbar';
+import ProfileInfo from '../components/navbar/profile-info/ProfileInfo';
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <h1>Home</h1>
+      <ProfileInfo />
     </div>
   );
 };

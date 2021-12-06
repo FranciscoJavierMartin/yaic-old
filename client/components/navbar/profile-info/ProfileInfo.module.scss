@@ -1,0 +1,91 @@
+.profileInfo {
+  display: grid;
+  grid-template-areas:
+    'avatar'
+    'actions'
+    'info'
+    'stats';
+
+  @media (min-width: $sm-screen) {
+    grid-template-areas:
+      'avatar actions'
+      'avatar stats'
+      'avatar info';
+  }
+
+  .avatarContainer {
+    grid-area: avatar;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+
+    .avatar {
+      border-radius: 50%;
+    }
+  }
+
+  .actions {
+    grid-area: actions;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      padding-right: 0px;
+    }
+
+    & > * {
+      padding-right: 20px;
+    }
+
+    @media (max-width: $sm-screen) {
+      justify-content: center;
+    }
+  }
+
+  .stats {
+    grid-area: stats;
+    display: flex;
+
+    @media (max-width: $sm-screen) {
+      justify-content: space-evenly;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &:last-child {
+      padding-right: 0px;
+    }
+
+    & > * {
+      padding-right: 20px;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      @media (min-width: $sm-screen) {
+        flex-direction: row;
+
+        & > * {
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .info {
+    grid-area: info;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: $sm-screen) {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+}
