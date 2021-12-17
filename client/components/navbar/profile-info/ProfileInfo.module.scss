@@ -14,10 +14,10 @@
   }
 
   .avatarContainer {
-    grid-area: avatar;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    display: flex;
+    grid-area: avatar;
+    justify-content: space-evenly;
     padding: 2rem;
 
     .avatar {
@@ -26,9 +26,9 @@
   }
 
   .actions {
-    grid-area: actions;
-    display: flex;
     align-items: center;
+    display: flex;
+    grid-area: actions;
 
     &:last-child {
       padding-right: 0px;
@@ -44,15 +44,15 @@
   }
 
   .stats {
-    grid-area: stats;
     display: flex;
+    grid-area: stats;
 
     @media (max-width: $sm-screen) {
-      justify-content: space-evenly;
-      border-top: 1px solid lightgray;
       border-bottom: 1px solid lightgray;
-      padding-top: 5px;
+      border-top: 1px solid lightgray;
+      justify-content: space-evenly;
       padding-bottom: 5px;
+      padding-top: 5px;
     }
 
     &:last-child {

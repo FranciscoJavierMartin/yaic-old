@@ -1,21 +1,21 @@
 .navbar {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   input {
-    display: none;
-    color: gray;
     background-color: lightgray;
-    text-align: center;
-    padding: 5px;
+    border-color: lightgray;
+    border-radius: 5px;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: gray;
+    display: none;
     max-width: 20rem;
     outline: 0;
-    border-radius: 5px;
     outline-offset: -2px;
-    border-width: 1px;
-    border-color: lightgray;
-    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
 
     @media (min-width: $sm-screen) {
       display: block;
@@ -24,13 +24,13 @@
 
   .links {
     display: inline-block;
-    padding-right: 10px;
     font-weight: bold;
+    padding-right: 10px;
 
     & > * {
-      padding: 5px 10px;
-      display: inline-block;
       border-radius: 5px;
+      display: inline-block;
+      padding: 5px 10px;
       text-decoration: none;
     }
 
