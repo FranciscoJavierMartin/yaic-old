@@ -1,0 +1,19 @@
+.postList {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+
+  @media (min-width: $sm-screen) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $lg-screen) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .post {
+    background-color: gray;
+    border: 1px solid black;
+  }
+}

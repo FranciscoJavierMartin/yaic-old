@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '@/components/navbar/Navbar';
 import ProfileInfo from '@/components/profile-info/ProfileInfo';
+import PostList from '@/components/post-list/PostList';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <ProfileInfo />
+      <PostList />
     </div>
   );
 };
