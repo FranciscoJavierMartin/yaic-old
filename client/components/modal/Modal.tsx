@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './Modal.module.scss';
+import CommentSemantic from '../comments/Comments';
 
 export default function Modal() {
   return (
@@ -13,12 +14,7 @@ export default function Modal() {
             height={550}
             width={550}
           />
-          <div className={styles.overlay}>
-            <div className={styles.stats}>
-              <span>112K</span>
-              <span>2,090</span>
-            </div>
-          </div>
+          <CommentSemantic />
         </article>
       </div>
     </div>
