@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Navbar from '@/components/navbar/Navbar';
 import ProfileInfo from '@/components/profile-info/ProfileInfo';
 import PostList from '@/components/post-list/PostList';
+import Modal from '@/components/modal/Modal';
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
       <Navbar />
       <ProfileInfo />
       <PostList />
+      <Modal />
     </div>
   );
 };
