@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <Navbar />
       <ProfileInfo />
       <PostList />
-      <Modal />
+      {/* <Modal /> */}
     </div>
   );
 };
