@@ -1,8 +1,7 @@
 .postList {
   display: grid;
+  grid-gap: 15px;
   grid-template-columns: 1fr;
-  grid-row-gap: 15px;
-  grid-column-gap: 15px;
 
   @media (min-width: $sm-screen) {
     grid-template-columns: 1fr 1fr;
