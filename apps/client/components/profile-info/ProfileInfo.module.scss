@@ -31,7 +31,7 @@
     grid-area: actions;
 
     &:last-child {
-      padding-right: 0px;
+      padding-right: 0;
     }
 
     & > * {
@@ -56,7 +56,7 @@
     }
 
     &:last-child {
-      padding-right: 0px;
+      padding-right: 0;
     }
 
     & > * {
@@ -84,8 +84,8 @@
     padding-right: 1rem;
 
     @media (min-width: $sm-screen) {
-      padding-left: 0rem;
-      padding-right: 0rem;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
