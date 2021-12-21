@@ -1,34 +1,34 @@
 .post {
   position: relative;
 
-  &:hover {
-    .overlay {
-      display: block;
-    }
-  }
-
   .overlay {
-    background-color: rgba(45, 55, 72, 0.25);
+    background-color: rgba(45, 55, 72, 25%);
+    display: none;
+    height: 99%;
+    left: 0;
+    overflow: hidden;
     position: absolute;
     top: 0;
-    left: 0;
-    height: 99%;
     width: 100%;
-    overflow: hidden;
-    display: none;
 
     .stats {
-      display: flex;
-      justify-content: center;
       align-items: center;
+      display: flex;
       height: 100%;
+      justify-content: center;
       width: 100%;
 
       span {
-        font-weight: bold;
         color: white;
+        font-weight: bold;
         padding: 10px;
       }
+    }
+  }
+
+  &:hover {
+    .overlay {
+      display: block;
     }
   }
 }
