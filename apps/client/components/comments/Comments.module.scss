@@ -1,7 +1,6 @@
 .comments {
   font-size: 1rem;
   margin: 1.5em 0;
-  // max-width: 650px;
   padding: 10px;
   width: 100%;
 
@@ -10,34 +9,34 @@
   }
 
   .comment {
-    position: relative;
     background: 0 0;
-    margin: 0.5rem 0 0;
-    padding: 0.5rem 0 0;
     border: none;
     border-top: none;
     line-height: 1.2;
+    margin: 0.5rem 0 0;
+    padding: 0.5rem 0 0;
+    position: relative;
 
     .avatar {
       display: block;
-      width: 2.5rem;
-      height: auto;
       float: left;
+      height: auto;
       margin: 0.2em 0 0;
+      width: 2.5rem;
 
       img {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        height: 100%;
         border-radius: 0.25rem;
         border-style: none;
+        display: block;
+        height: 100%;
+        margin: 0 auto;
+        width: 100%;
       }
     }
 
     .content {
-      margin-left: 3.5rem;
       display: block;
+      margin-left: 3.5rem;
 
       .author {
         cursor: pointer;
@@ -46,10 +45,10 @@
     }
 
     .metadata {
+      color: rgba(0, 0, 0, 40%);
       display: inline-block;
-      margin-left: 0.5rem;
-      color: rgba(0, 0, 0, 0.4);
       font-size: 0.875em;
+      margin-left: 0.5rem;
 
       & > * {
         display: inline-block;
@@ -62,22 +61,22 @@
     }
 
     .text {
-      margin: 0.25em 0 0.5em;
+      color: rgba(0, 0, 0, 87%);
       font-size: 1em;
-      word-wrap: break-word;
-      color: rgba(0, 0, 0, 0.87);
       line-height: 1.3;
+      margin: 0.25em 0 0.5em;
       padding-right: 10px;
+      word-wrap: break-word;
     }
 
     .actions {
       font-size: 0.875em;
 
       a {
+        color: rgba(0, 0, 0, 40%);
         cursor: pointer;
         display: inline-block;
         margin: 0 0.75em 0 0;
-        color: rgba(0, 0, 0, 0.4);
 
         &:last-child {
           margin-right: 0;
